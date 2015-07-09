@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/dbkaplun/unsplay/issues"
   },
-  "homepage": "https://github.com/dbkaplun/unsplay"
+  "homepage": "https://github.com/dbkaplun/unsplay",
+  "dependencies": {
+    "lodash": "^3.10.0"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
 }
