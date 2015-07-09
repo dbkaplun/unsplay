@@ -4,21 +4,19 @@ function unsplay (items, key, parentKey) {
     return nodes;
   }, {});
 
-  var lastCount, count;
   do {
-    lastCount = count;
-    count = 0;
+    var reparented = false;
     nodes = Object.keys(nodes).reduce(function (newNodes, id) {
       var node = nodes[id];
       var parentId = node.item[parentKey];
-      if (parentId in nodes) nodes[parentId].children.push(node);
-      else {
-        newNodes[id] = node;
-        count++;
+      if (parentId in nodes) {
+        nodes[parentId].children.push(node);
+        reparented = true;
       }
+      else newNodes[id] = node;
       return newNodes;
     }, {});
-  } while (lastCount !== count);
+  } while (reparented);
   return Object.keys(nodes).map(function (id) { return nodes[id]; });
 }
 
