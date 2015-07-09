@@ -1,0 +1,19 @@
+{
+  "name": "get-tree",
+  "version": "1.0.0",
+  "description": "Compute a tree from a list with IDs and parent IDs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbkaplun/get-tree.git"
+  },
+  "author": "Dan Kaplun <dbkaplun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbkaplun/get-tree/issues"
+  },
+  "homepage": "https://github.com/dbkaplun/get-tree"
+}
