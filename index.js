@@ -1,6 +1,6 @@
 var _ = require('lodash');
 
-function getTree (items, key, parentKey) {
+function unsplay (items, key, parentKey) {
   var nodes = _(items)
     .indexBy(key)
     .mapValues(function (item) { return {item: item, children: []}; })
@@ -8,7 +8,7 @@ function getTree (items, key, parentKey) {
   var lastCount, count;
   do {
     lastCount = count;
-    nodes = _.pick(nodes, function (node, id) {
+    nodes = _.pick(nodes, function (node) {
       var parentId = _.get(node.item, parentKey);
       if (!(parentId in nodes)) return true;
       _.get(nodes, parentId).children.push(node);
@@ -18,4 +18,4 @@ function getTree (items, key, parentKey) {
   return _.values(nodes);
 }
 
-module.exports = getTree;
+module.exports = unsplay;

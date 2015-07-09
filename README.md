@@ -1,2 +1,2 @@
-# get-tree
-Compute a tree from a list with IDs and parent IDs
+# unsplay
+Compute a tree from an array of objects with IDs and parent IDs

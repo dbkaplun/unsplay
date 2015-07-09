@@ -1,19 +1,19 @@
 {
-  "name": "get-tree",
+  "name": "unsplay",
   "version": "1.0.0",
-  "description": "Compute a tree from a list with IDs and parent IDs",
+  "description": "Compute a tree from an array of objects with IDs and parent IDs",
   "main": "index.js",
   "scripts": {
     "test": "./spec.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dbkaplun/get-tree.git"
+    "url": "https://github.com/dbkaplun/unsplay.git"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbkaplun/get-tree/issues"
+    "url": "https://github.com/dbkaplun/unsplay/issues"
   },
-  "homepage": "https://github.com/dbkaplun/get-tree"
+  "homepage": "https://github.com/dbkaplun/unsplay"
 }
