@@ -1,6 +1,6 @@
 {
   "name": "unsplay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Compute a tree from an array of objects with IDs and parent IDs",
   "main": "index.js",
   "scripts": {
