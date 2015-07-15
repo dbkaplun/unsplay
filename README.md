@@ -1,4 +1,4 @@
-# unsplay
+# unsplay [![Build Status](https://travis-ci.org/dbkaplun/unsplay.svg?branch=master)](https://travis-ci.org/dbkaplun/unsplay)
 Compute a tree from an array of objects with IDs and parent IDs
 
 ## Installation
